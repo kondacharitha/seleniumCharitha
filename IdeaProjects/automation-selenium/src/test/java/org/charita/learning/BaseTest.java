@@ -61,7 +61,8 @@ public class BaseTest {
 
    }
     public void searchProperty() throws InterruptedException{
-          driver.findElement(By.id("searchLocation")).sendKeys("WV3 0EA");
+
+          driver.findElement(By.id("searchLocation")).sendKeys(prop.getProperty("postcode"));
         System.out.println("searching for location on right move" );
         Thread.sleep(5000);
     }
